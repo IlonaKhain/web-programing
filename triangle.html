@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>Lab2</title>
+
+	<style type="text/css">
+		
+	</style>
+<link href="style_lab1.css" rel="stylesheet" type="text/css">
+
+	<script type="text/javascript" src="trianglejs.js"></script>
+</head>
+
+<body>
+<div id="container">
+
+<div id="header">
+  <h1>   Лабораторная работа 2 </h1>
+</div>
+<div id="left">
+  <h3>Menu</h3>
+  <p><a href ="Main_page.html">Main Page</a>
+  <p><a href ="Schedule.html">Schedule</a></p>
+  <p><a href ="BookChapters.html">У конца Вселенной</a>
+   <p><a href ="triangle.html">Функции с треугольником</a>
+ 
+</div>
+<div id="content">
+<button onclick="data.refreshTable()">Refresh</button>
+	<button onclick="data.addRandom()">Add random</button>
+	<button onclick="data.clear()">Clear</button>
+
+	<table>
+		<thead>
+			<tr>
+				<th>#</th>
+				<th>AB</th>
+				<th>BC</th>				
+				<th>SemiPerimeter</th>
+				<th>Increase side</th>
+				<th>Decrease Side</th>
+				<th>CircumcircleRadius</th>
+				<th>Angles</th>
+				<th>Operations</th>
+			</tr>
+		</thead>
+		<tbody id="triangles"></tbody>
+	</table>
+<p>
+	
+	<label> Input percent for increasing or decreasing edge</label>
+	<input id="percent" value="10">
+	
+</p>
+<p>
+	<label> Input edge for increasing or decreasing (1/2)</label>
+	<input id="edge" value="1">
+</p>
+  
+</div>
+<div id="clear"></div>
+<div id="footer"> 
+
+  <p><strong>Илона Хаин Вариант 27</strong></p>
+</div>
+
+</div>
+	
+
+	<script type="text/javascript">data.refreshTable()</script>	
+</body>
+
+</html>
