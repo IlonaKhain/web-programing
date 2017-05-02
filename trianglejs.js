@@ -155,6 +155,10 @@ var data = {
 	addRandom : function() {
 		this.add(getRandom(), getRandom(), getRandom());
 	},
+	addPersonalTriangle : function(a, b) {
+		this.triangles.push(new TriangleView(parseFloat(document.getElementById("Sizeedge1").value), parseFloat(document.getElementById("Sizeedge2").value)));
+		this.refreshTable();
+	},
 
 	deleteTriangle : function(index) {
 		this.triangles.splice(index, 1);
